@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-to-Price Slider</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</head>
+
+<body>
+
+    <div id="page-container">
+
+        <div id="time-price-container">
+
+            <div>
+                <p class="display-text" id="time">0:00</p>
+            </div>
+
+            <div id="time-price-seperator">
+                <p class="display-text">-</p>
+            </div>
+
+            <div>
+                <p class="display-text" id="price">$0</p>
+            </div>
+
+        </div>
+
+        <div id="time-slider-container">
+
+            <div id="time-divisions-container">
+
+                <div class="radio-option-container">
+                    <input class="radio-input-checkbox" type="radio" id="minute" name="time-division" value="minute"
+                        checked> <label for="minute">Minutes</label>
+                </div>
+
+                <div class="radio-option-container">
+                    <input class="radio-input-checkbox" type="radio" id="half-hour" name="time-division"
+                        value="half-hour"> <label for="half-hour">Half Hours</label>
+                </div>
+
+                <div class="radio-option-container">
+                    <input class="radio-input-checkbox" type="radio" id="hour" name="time-division" value="hour"> <label
+                        for="hour">Hours</label>
+                </div>
+
+            </div>
+
+            <input type="range" min="0" max="0" value="0" id="time-slider">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
